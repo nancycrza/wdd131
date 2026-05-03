@@ -22,3 +22,20 @@ let para = document.querySelector('p');
 // it will do the same as the command on top notes ( I did)
 
 para.classList.add('background'); 
+
+//document.querySelector('body').classList.add('background');
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/gh.png');
+
+
+
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+    document.getElementById(codeValue).style.color = 'hotpink';
+})
+
+                
