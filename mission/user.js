@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (current === 'light') {
       document.body.classList.add('light');
       document.body.classList.remove('dark');
-      logo.src = "https://wdwdui.github.io/wdd131/images/byui-logo-blue.png";
+      logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp";
     } else {
       document.body.classList.remove('dark', 'light');
-      logo.src = "https://wdwdui.github.io/wdd131/images/byui-logo-blue.png";
+      logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp";
     }
   }
 });
