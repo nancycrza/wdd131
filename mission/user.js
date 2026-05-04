@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (current === 'dark') {
       document.body.classList.add('dark');
       document.body.classList.remove('light');
-      logo.src = "https://wdwdui.github.io/wdd131/images/byui-logo-white.webp";
+      logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-white.png";
     } else if (current === 'light') {
       document.body.classList.add('light');
       document.body.classList.remove('dark');
