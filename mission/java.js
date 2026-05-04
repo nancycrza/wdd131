@@ -1,21 +1,24 @@
-
-let selectElem = document.querySelector('select');
-let logo = document.querySelector('img');
-
 let selectElem = document.querySelector('#theme-selector');
+let logo = document.querySelector('.logo img');
 
+selectElem.addEventListener('change', changeTheme);
 
 function changeTheme() {
-    let current = selectElem.value;
+let current = selectElem.value;
 
-    if (current == 'dark') {
-        // dark grey theme
-        document.body.className = 'dark';
-        logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp"; //my light logo byu
-    } else {
-        // light grey theme
-        document.body.className = 'light';
-        logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-white.png"; //my light logo byu
-    }
-}           
-                    
+if (current == 'dark') {
+// dark grey theme
+document.body.classList.add('dark');
+document.body.classList.remove('light');
+logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-white.png";
+} else if (current == 'light') {
+// light theme
+document.body.classList.add('light');
+document.body.classList.remove('dark');
+logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-blue.png";
+} else {
+// default / "Choose Mode"
+document.body.classList.remove('dark', 'light');
+logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-blue.png";
+}
+}
