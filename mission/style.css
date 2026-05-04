@@ -3,16 +3,14 @@ font-family: serif;
 display: flex;
 justify-content: center;
 padding-top: 40px;
+transition: background-color 0.3s, color 0.3s;
 
 }
-body.dark-gray {
+.dark {
     background-color: #555555;
     color: #ffffff;
 }
-body.light-gary {
-    background-color: #d3d3d3;
-    color:#333;
-}
+
 
 .mission-container {
 width: 600px;

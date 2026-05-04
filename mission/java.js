@@ -2,7 +2,8 @@
 let selectElem = document.querySelector('select');
 let logo = document.querySelector('img');
 
-selectElem.addEventListener('change', changeTheme);
+let selectElem = document.querySelector('#theme-selector');
+
 
 function changeTheme() {
     let current = selectElem.value;
