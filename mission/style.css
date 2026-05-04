@@ -18,15 +18,6 @@ background-color: #ffffff;
 color: #000000;
 }
 
-/* Rest of your CSS stays the same */
-.mission-container {
-width: 600px;
-border: 1px solid #ccc;
-padding: 90px;
-text-align: center;
-max-width: 470px;
-}
-
 .mission-container {
 width: 600px;
 border: 1px solid #ccc;
