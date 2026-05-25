@@ -72,8 +72,19 @@ dialog {
   border: none;
   padding: 0;
   background: transparent;
+
+  margin: auto;
 }
 
+dialog[open] {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
 
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.8);
@@ -84,6 +95,8 @@ dialog img {
   max-width: 90vw;
   max-height: 80vh;
   display: block;
+
+  margin: auto;
 }
 
 
