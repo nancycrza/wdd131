@@ -33,6 +33,10 @@ header {
     flex-direction: column;
 }
 
+.nav-links.open { /* function to menu drop down */
+  display: flex;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -60,6 +64,41 @@ main {
     object-fit: cover; /* REQUIRED */
     margin: 0 auto;
     display: block;
+}
+
+/* MODAL */
+
+dialog {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+dialog img {
+  max-width: 90vw;
+  max-height: 80vh;
+  display: block;
+}
+
+
+.close-viewer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background: white;
+  border: none;
+
+  padding: 10px;
+  cursor: pointer;
+
+  font-size: 1rem;
 }
 
 /* FOOTER */

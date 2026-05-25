@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics 📷 </title>
-    
-     <!-- Normalize CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <link rel="stylesheet" href="modal.css">
-    <script defer src="modal. js"></script>
 
+    <link href="modal.css" rel="stylesheet">
+
+
+     <!-- Normalize CSS -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   
 </head>
+
 <body>
 
     <header>
         <h1>Cool Pics 📷</h1>
+       
 
         <button class="menu-btn">Menu</button>
 
@@ -28,30 +30,45 @@
 
     <main>
         <h2>Current Work</h2>
-        <div class="gallery">
+        <section class="gallery">
             <!-- Repeat images "images/pic.jpg" alt="nature"> -->
 
             <figure>
-<img src="images/pic-sm.jpg" alt="nature">
-</figure> <figure>
-<img src="images/pic-sm.jpg" alt="nature">
-</figure> <figure> 
-<img src="images/pic-sm.jpg" alt="nature">
-</figure> <figure>
-<img src="images/pic-sm.jpg" alt="nature">
-</figure>
-<figure>
-<img src="images/pic-sm.jpg" alt="nature">
-</figure> <figure>
-<img src="images/pic-sm.jpg" alt="nature">
-           
+            <img src="images/pic-sm.jpg" alt="nature">
+            </figure> 
+            <figure>
+            <img src="images/pic-sm.jpg" alt="nature">
+            </figure> 
+            <figure> 
+            <img src="images/pic-sm.jpg" alt="nature">
+            </figure> 
+            <figure>
+            <img src="images/pic-sm.jpg" alt="nature">
+            </figure>
+            <figure>
+            <img src="images/pic-sm.jpg" alt="nature">
+            </figure> 
+            <figure>
+            <img src="images/pic-sm.jpg" alt="nature">
+            </figure> 
+        </section>  
+        <dialog>
+            <img>
+            <button class="close-viewer">X</button>
+
+            <img src="" alt="Expanded Image">
+
+        </dialog> 
             
-        </div>
+      
     </main>
 
     <footer>
         <p>© 2026 Cool Pics | Nancy@BYUI</p>
     </footer>
+
+
+    <script defer src="modal.js"></script>
 
 </body>
 </html>

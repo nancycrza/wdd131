@@ -1,4 +1,7 @@
 
+// menu button drom down
+const menuButton = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
 
 const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('dialog');
@@ -34,4 +37,10 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
-            
+
+// menu button drop down
+menuButton.addEventListener('click', () => {
+
+  navLinks.classList.toggle('open');
+
+});
