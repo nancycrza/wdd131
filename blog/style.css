@@ -6,77 +6,74 @@
   box-sizing: border-box;
 }
 
-/* BODY */
+/* PAGE */
 
 body {
+  background-color: #f5f5f5;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f8f8f8;
-  color: #222;
-  line-height: 1.5;
   padding: 20px;
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 
 .container {
   max-width: 900px;
   margin: auto;
   background-color: white;
-  border: 2px solid #333;
+  border: 2px solid black;
 }
 
 /* HEADER */
 
 header {
   text-align: center;
+  padding: 20px;
   border-bottom: 2px solid #d8b28a;
-  padding: 1rem;
 }
 
 header h1 {
-  margin-bottom: 1rem;
-  color: #4a2c2a;
+  margin-bottom: 20px;
+  color: #3d2435;
 }
 
-/* NAVIGATION */
+/* NAV */
 
-nav ul {
-  list-style: none;
+.nav-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 30px;
+  list-style: none;
 }
 
-nav a {
+.nav-links a {
   text-decoration: none;
   color: #b22222;
   font-weight: bold;
 }
 
-nav a:hover,
-nav a:focus {
+.nav-links a:hover {
   text-decoration: underline;
 }
 
-/* BLOG GRID LAYOUT */
+/* GRID LAYOUT */
 
-.blog-layout {
+.blog-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* SIDEBAR */
+/* LEFT COLUMN */
 
-.details {
+.book-details {
   text-align: center;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 1rem;
-  font-size: 0.95rem;
+  padding-bottom: 20px;
+  line-height: 2;
 }
 
-/* ARTICLE */
+/* RIGHT COLUMN */
 
 .book-review {
   text-align: center;
@@ -84,14 +81,13 @@ nav a:focus {
 
 .book-review h2 {
   color: #b22222;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .book-review img {
   width: 200px;
   max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .book-review p {
@@ -103,33 +99,32 @@ nav a:focus {
 
 footer {
   text-align: center;
+  padding: 15px;
   border-top: 2px solid #d8b28a;
-  padding: 1rem;
-  font-weight: bold;
+  margin-top: 20px;
 }
 
-/* LARGER SCREEN LAYOUT */
+/* DESKTOP LAYOUT */
 
 @media screen and (min-width: 700px) {
 
-  .blog-layout {
+  .blog-grid {
     grid-template-columns: 200px 1fr;
     align-items: start;
   }
 
-  .details {
+  .book-details {
     border-bottom: none;
     border-right: 1px solid #ccc;
-    padding-right: 1rem;
+    padding-right: 20px;
   }
 
   .book-review {
     text-align: left;
-    padding-left: 2rem;
+    padding-left: 20px;
   }
 
   .book-review img {
     display: block;
-    margin-left: 0;
   }
 }
