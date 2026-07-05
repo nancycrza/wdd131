@@ -1,0 +1,163 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #c8d6e3;
+    padding: 25px;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+/* ---------- TITLE ---------- */
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* ---------- FORM ---------- */
+
+form {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: 2px solid #999;
+    background: #edf3ff;
+    border-radius: 2px;
+}
+
+/* Email row */
+
+.field:not(.hidden) {
+    margin-bottom: 16px;
+}
+
+/* ---------- BUTTON ---------- */
+
+button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+
+    font-size: 22px;
+
+    background: #bfd1df;
+
+    border: 3px solid #444;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b3c7d7;
+}
+
+/* ---------- HIDDEN FIELD ---------- */
+
+.hidden {
+    display: none;
+}
+
+/* ---------- ERROR BOX ---------- */
+
+#errors {
+
+    margin-top: 18px;
+
+    background: white;
+
+    width: fit-content;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+
+    color: black;
+
+    font-weight: bold;
+}
+
+#errors:empty {
+    display: none;
+}
+
+/* ---------- TICKET OUTPUT ---------- */
+
+#ticketOutput {
+
+    margin-top: 30px;
+
+    display: none;
+}
+
+#ticketOutput h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+}
+
+#ticketOutput p {
+
+    font-size: 24px;
+
+    margin-bottom: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:700px) {
+
+.row{
+
+flex-direction:column;
+
+}
+
+h1{
+
+font-size:40px;
+
+}
+
+}
